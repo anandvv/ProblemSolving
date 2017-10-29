@@ -11,6 +11,27 @@ namespace DesignQuestions
             //StringCompressorTestCase();
             //AnagramTestCase();
             //FindDuplicatesTestCase();
+
+            PermutationsTestCase();
+
+        }
+
+        private static void PermutationsTestCase()
+        {
+            Permutation p = new Permutation();
+            int[] array = { 1, 2, 1, 4 };
+            List<List<int>> output = p.Permute(array);
+
+            foreach (var list in output)
+            {
+                foreach (var num in list)
+                {
+                    Console.Write(num + " ");
+                }
+                Console.WriteLine();
+            }
+
+            Console.ReadLine();
         }
 
         private static void FindDuplicatesTestCase()
