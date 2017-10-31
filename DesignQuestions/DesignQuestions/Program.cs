@@ -11,9 +11,35 @@ namespace DesignQuestions
             //StringCompressorTestCase();
             //AnagramTestCase();
             //FindDuplicatesTestCase();
+            //PermutationsTestCase();
+            //FizzBuzzTestCase();
+            //NthLastNodeTestCase();
 
-            PermutationsTestCase();
+            MakingChangeTestCase();
+        }
 
+        private static void MakingChangeTestCase()
+        {
+            MakingChange mc = new MakingChange();
+            mc.change(82);
+            Console.WriteLine(mc.Coins);
+            Console.ReadLine();
+        }
+
+        private static void NthLastNodeTestCase()
+        {
+            NthLastNodeOfLinkedList list = new NthLastNodeOfLinkedList();
+            int[] array = { 23, 3, 67, 53, 75, 99, 82, 12, 5, 44 };
+            list.setupTestData(array);
+            Console.WriteLine("5th last Node: " + list.getNthLastNode(5));
+            Console.ReadLine();
+        }
+
+        private static void FizzBuzzTestCase()
+        {
+            FizzBuzz fb = new FizzBuzz();
+            fb.runFizzBuzz(30);
+            Console.ReadLine();
         }
 
         private static void PermutationsTestCase()
